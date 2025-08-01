@@ -64,11 +64,9 @@ section[class^="panels_"]>div[class^="mask_"] {
 /* hide nercessary button */
 div[aria-label="Send a gift"],
 div[aria-label="Open GIF picker"],
-[aria-label="Typing Hidden (Global)"],
-div[aria-label="Open sticker picker"] {
-  display: none;
-}
-button[aria-label|="Open Translate Modal"]{
+div[aria-label="Open sticker picker"],
+button[aria-label="Open Translate Modal"],
+button[aria-label="Typing Hidden (Global)"] {
 display: none;
 }
 /* App launcher */
