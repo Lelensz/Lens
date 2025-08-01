@@ -64,7 +64,7 @@ section[class^="panels_"]>div[class^="mask_"] {
 /* hide nercessary button */
 div[aria-label="Send a gift"],
 div[aria-label="Open GIF picker"],
-div[aria-label="Typing Hidden (Global)"],
+[aria-label="Typing Hidden (Global)"],
 div[aria-label="Open sticker picker"] {
   display: none;
 }
