@@ -355,3 +355,20 @@ span[class*="timestamp_"] > [aria-label^="Today at"]::before {
 }
 
 
+
+/* Fix MemberList Resize */
+.member__5d473 { 
+  margin-left: -2px;
+}
+
+
+/* Hide typing dots in chat bar */
+svg[class^="ellipsis"] {
+  display: none !important;
+
+  & + span {
+    margin-left: 5px !important;
+  }
+}
+
+
