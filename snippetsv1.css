@@ -337,6 +337,10 @@ span[class*="timestamp_"] > [aria-label^="Today at"]::before {
   margin-left: -2px;
 }
 
+/* Hides Store and Shop button */
+[href="/store"]{
+    display: none;
+}
 
 /* Hide typing dots in chat bar */
 svg[class^="ellipsis"] {
