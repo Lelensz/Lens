@@ -396,3 +396,11 @@ svg[class^="ellipsis"] {
   background-color: var(--attachment-color) !important;
 }
 
+
+/* embed X button */
+.embedFull__623de {
+    .embedSuppressButton__623de {
+    color: rgba(145, 47, 47, 0.586);
+  }
+}
+
