@@ -360,7 +360,6 @@ svg[class^="ellipsis"] {
   border-radius: 8px;
   max-width: 150px;
 }
-
 .searchBar__97492 .searchBarComponent__35e86 {
   padding: 0 8px;
   border-radius: 14px;
@@ -391,16 +390,9 @@ svg[class^="ellipsis"] {
   padding: 0px 8px 0px 0;
   border-radius: 0 11px 11px 0;
 }
-
 .searchFilter_bd8186 {
   background-color: var(--attachment-color) !important;
 }
 
 
-/* embed X button */
-.embedFull__623de {
-    .embedSuppressButton__623de {
-    color: rgba(145, 47, 47, 0.586);
-  }
-}
 
