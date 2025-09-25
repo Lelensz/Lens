@@ -138,6 +138,9 @@ div[data-tab-id="EquicordPlugins"]::before {
 div[data-tab-id="EquicordThemes"]::before {
     mask-image: var(--svg-themes);
 }
+div[data-tab-id="EquicordChangelog"]::before {
+    mask-image: var(--svg-changelog);
+}
 div[data-tab-id="EquicordUpdater"]::before {
     mask-image: var(--svg-updater);
 }
@@ -368,6 +371,7 @@ div[data-tab-id="INSTANT_INVITES"]::before {
     --svg-plugins: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Plugins.svg');
     --svg-themes: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Themes.svg');
     --svg-updater: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Updater.svg');
+    --svg-changelog: url('https://files.catbox.moe/pm21wu.svg');
     --svg-cloud: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Cloud.svg');
     --svg-backup-restore: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Backup-Restore.svg');
     --svg-vekstop: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Vesktop.svg');
