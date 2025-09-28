@@ -352,3 +352,14 @@ span[class*="timestamp_"] > [aria-label^="Today at"]::before {
       align-items: center;
   }
 }
+
+
+/* Hide typing dots in chat bar */
+svg[class^="ellipsis"] {
+  display: none !important;
+
+  & + span {
+    margin-left: 5px !important;
+  }
+}
+
