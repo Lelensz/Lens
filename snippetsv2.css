@@ -54,10 +54,10 @@ section[class^="panels_"]>div[class^="mask_"] {
 }
 
 
-/* Remove emoji reactions */
-[class^=hoverBarButton_][aria-label^="Click to react"], 
-[class^=separator_] {
-  display: none !important;
+/* Remove 3 emoji reactions */
+.hoverBarButton_f84418[aria-label^="Click to "],
+.separator_f84418 {
+  display: none;
 }
 
 /* hide nercessary button */
