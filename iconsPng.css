@@ -1,0 +1,87 @@
+/* Change Icon */
+/* Nitro Home */
+
+/* Friends */
+[href="/channels/@me"] .avatar__20a53 svg {
+    display: none !important;
+}
+[href="/channels/@me"] .avatar__20a53::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url("https://github.com/Lelensz/icons/blob/main/Friends.png?raw=true");
+}
+/* Nitro Home */
+[href="/store"] .avatar__20a53 svg {
+    display: none !important;
+}
+[href="/store"] .avatar__20a53::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url("https://github.com/Lelensz/icons/blob/main/Nitro.png?raw=true");
+}
+/* Shop */
+[href="/shop"] .avatar__20a53 svg {
+    display: none !important;
+}
+[href="/shop"] .avatar__20a53::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url("https://github.com/Lelensz/icons/blob/main/Shop.png?raw=true");
+}
+/* Quest Home */
+[href="/quest-home"] .avatar__20a53 svg {
+    display: none !important;
+}
+[href="/quest-home"] .avatar__20a53::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url("https://github.com/Lelensz/icons/blob/main/Quest.png?raw=true");
+}
+
+
+
+/* change Discover and Add Server icon */
+[data-list-item-id="guildsnav___create-join-button"] {
+  content: url("https://github.com/Lelensz/icons/blob/main/Add%20Server.png?raw=true");
+}
+
+[data-list-item-id="guildsnav___guild-discover-button"] {
+  content: url("https://github.com/Lelensz/icons/blob/main/Discover.png?raw=true");
+}
+
+
+/* Little Fix */
+/* turn every text white on hover */
+*:hover {
+  color:var(--text-1) !important;
+}
+
+/* embed X button */
+.embedFull__623de {
+    .embedSuppressButton__623de {
+    color: rgba(145, 47, 47, 0.586);
+  }
+}
+
+/* fix chat bar */
+.attachWrapper__0923f {
+  padding: var(--chatbar-padding);
+}
+
+/* search Text */
+.public-DraftEditorPlaceholder-inner {
+  color: var(--text-5);
+}
+
+/* quest shop */
+.clickable_a3e8db {
+    margin-right: 130px;
+}
