@@ -64,13 +64,6 @@
   color:var(--text-1) !important;
 }
 
-/* embed X button */
-.embedFull__623de {
-    .embedSuppressButton__623de {
-    color: rgba(145, 47, 47, 0.586);
-  }
-}
-
 /* fix chat bar */
 .attachWrapper__0923f {
   padding: var(--chatbar-padding);
