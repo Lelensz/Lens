@@ -68,9 +68,10 @@ button[aria-label="Open Translate Modal"],
 button[aria-label="Typing Hidden (Global)"] {
 display: none;
 }
+
 /* App launcher */
-.channelAppLauncher_e6e74f {
-    display: none;
+.app-launcher-entrypoint{
+    display: none !important;
 }
 
 /* Remove EMOJI (MORE Buttons) */
@@ -78,22 +79,10 @@ display: none;
   display: none;
 }
 
-/* Remove Ads Shop Edit Profile */
-.container__8279f {
-    display: none;
-}
-
-/* FIX STUFF */
-/* Fix Add Today Timestamp */
-span[class*="timestamp_"] > [aria-label^="Today at"]::before {
-  content: "Today at "
-}
-
 /* Fix Reduce Channel List Spacing */
 [class="link__2ea32"] {
   padding-block: 1.5px;
 }
-
 
 
 /* SNIPPETS ADDED */
@@ -132,31 +121,6 @@ span[class*="timestamp_"] > [aria-label^="Today at"]::before {
   opacity: 0.25;
 }
 
-/* Role Colored v2 */
-.role_dfa8b6.pill_dfa8b6 .twoColorGradient_e5de78::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-        90deg,
-        var(--custom-gradient-color-1),
-        var(--custom-gradient-color-2),
-        var(--custom-gradient-color-3)
-    );
-    background-size: 50% 100%;
-    transition: background-position 0s;
-}
-.role_dfa8b6.pill_dfa8b6:hover .twoColorGradient_e5de78::before {
-    animation: seamlessGradient 5s linear infinite;
-}
-@keyframes seamlessGradient {
-    0% {
-        background-position: 0% 0%;
-    }
-    100% {
-        background-position: 100% 0%;
-    }
-}
 
 /* Link Hover with Unread Badge Effect by Refactor */
 :root {
@@ -395,4 +359,6 @@ svg[class^="ellipsis"] {
   }
 }
 
-
+.app-launcher-entrypoint{
+    display: none !important;
+}
