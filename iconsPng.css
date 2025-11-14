@@ -10,8 +10,15 @@
     display: block;
     width: 20px;
     height: 20px;
-    background: url("https://i.postimg.cc/Px6FgqTq/ezgif-48072811a01cee5a.png")no-repeat;
+    background: url("https://i.postimg.cc/d1jPfFS7/ezgif-60219cff1e14a32c.png")no-repeat;
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Add transition */
 }
+/* Hover effect */
+[href="/channels/@me"] .avatar__20a53:hover::before {
+    transform: scale(1.2); /* Increase size on hover */
+    opacity: 0.8; /* Slightly fade on hover */
+}
+
 /* Nitro Home */
 [href="/store"] .avatar__20a53 svg {
     display: none !important;
@@ -21,8 +28,15 @@
     display: block;
     width: 20px;
     height: 20px;
-    background: url("https://i.postimg.cc/m2KKZh9d/ezgif-1bd6203c168a2563.png")no-repeat;
+    background: url("https://i.postimg.cc/RZ73X6Ln/ezgif-6a180941670d1957.png")no-repeat;
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Add transition */
 }
+/* Hover effect */
+[href="/store"] .avatar__20a53:hover::before {
+    transform: scale(1.2); /* Increase size on hover */
+    opacity: 0.8; /* Slightly fade on hover */
+}
+
 /* Shop */
 [href="/shop"] .avatar__20a53 svg {
     display: none !important;
@@ -32,8 +46,15 @@
     display: block;
     width: 20px;
     height: 20px;
-    background: url("https://i.postimg.cc/k4wk7cNN/ezgif-43bf178286381f08.png") no-repeat;
+    background: url("https://i.postimg.cc/bwwJHCrm/ezgif-6b3082ff0faab687.png") no-repeat;
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Add transition */
 }
+/* Hover effect */
+[href="/shop"] .avatar__20a53:hover::before {
+    transform: scale(1.2); /* Increase size on hover */
+    opacity: 0.8; /* Slightly fade on hover */
+}
+
 /* Quest Home */
 [href="/quest-home"] .avatar__20a53 svg {
     display: none !important;
@@ -43,7 +64,13 @@
     display: block;
     width: 20px;
     height: 20px;
-    background: url("https://i.postimg.cc/j5Kbx2pN/ezgif-778274d0332f6ca4.png") no-repeat;
+    background: url("https://i.postimg.cc/wMQ5CfhQ/quest-orb.webp") no-repeat;
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Add transition */
+}
+/* Hover effect */
+[href="/quest-home"] .avatar__20a53:hover::before {
+    transform: scale(1.2); /* Increase size on hover */
+    opacity: 0.8; /* Slightly fade on hover */
 }
 
 
