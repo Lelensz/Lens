@@ -10,7 +10,7 @@
     display: block;
     width: 20px;
     height: 20px;
-    background: url("https://github.com/Lelensz/icons/blob/main/friends%202.webp?raw=true");
+    background: url("https://i.postimg.cc/Px6FgqTq/ezgif-48072811a01cee5a.png")no-repeat;
 }
 /* Nitro Home */
 [href="/store"] .avatar__20a53 svg {
@@ -21,7 +21,7 @@
     display: block;
     width: 20px;
     height: 20px;
-    background: url("https://github.com/Lelensz/icons/blob/main/nitro%20new.webp?raw=true");
+    background: url("https://i.postimg.cc/m2KKZh9d/ezgif-1bd6203c168a2563.png")no-repeat;
 }
 /* Shop */
 [href="/shop"] .avatar__20a53 svg {
@@ -32,7 +32,7 @@
     display: block;
     width: 20px;
     height: 20px;
-    background: url("https://github.com/Lelensz/icons/blob/main/Shop.webp?raw=true");
+    background: url("https://i.postimg.cc/k4wk7cNN/ezgif-43bf178286381f08.png") no-repeat;
 }
 /* Quest Home */
 [href="/quest-home"] .avatar__20a53 svg {
@@ -43,7 +43,7 @@
     display: block;
     width: 20px;
     height: 20px;
-    background: url("https://github.com/Lelensz/icons/blob/main/Quest.png?raw=true");
+    background: url("https://i.postimg.cc/j5Kbx2pN/ezgif-778274d0332f6ca4.png") no-repeat;
 }
 
 
@@ -64,10 +64,6 @@
   color:var(--text-1) !important;
 }
 
-/* fix chat bar */
-.attachWrapper__0923f {
-  padding: var(--chatbar-padding);
-}
 
 /* search Text */
 .public-DraftEditorPlaceholder-inner {
