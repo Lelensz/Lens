@@ -10,7 +10,7 @@
     display: block;
     width: 20px;
     height: 20px;
-    background: url("https://i.postimg.cc/RZDkZHV3/friends.png")no-repeat;
+    background: url("https://i.postimg.cc/HsyfSxpy/addfriend.png")no-repeat;
     transition: transform 0.3s ease, opacity 0.3s ease; /* Add transition */
 }
 /* Hover effect */
@@ -28,7 +28,7 @@
     display: block;
     width: 20px;
     height: 20px;
-    background: url("https://i.postimg.cc/FsF8bZYv/ezgif-16968e776aa9be29.png")no-repeat;
+    background: url("https://i.postimg.cc/HkGCHMSK/nitrohome.png")no-repeat;
     transition: transform 0.3s ease, opacity 0.3s ease; /* Add transition */
 }
 /* Hover effect */
@@ -46,7 +46,7 @@
     display: block;
     width: 20px;
     height: 20px;
-    background: url("https://i.postimg.cc/qqvwK11H/Shops.png") no-repeat;
+    background: url("https://i.postimg.cc/wMsbbfdT/Shopes.png") no-repeat;
     transition: transform 0.3s ease, opacity 0.3s ease; /* Add transition */
 }
 /* Hover effect */
