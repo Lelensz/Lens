@@ -77,11 +77,11 @@
 
 /* change Discover and Add Server icon */
 [data-list-item-id="guildsnav___create-join-button"] {
-  content: url("https://github.com/Lelensz/icons/blob/main/Add%20Server%20ll.webp?raw=true");
+  content: url("https://cdn3.emoji.gg/emojis/423717-discord-camp.png");
 }
 
 [data-list-item-id="guildsnav___guild-discover-button"] {
-  content: url("https://github.com/Lelensz/icons/blob/main/Discover%20II.webp?raw=true");
+  content: url("https://cdn3.emoji.gg/emojis/985781-magnifying-glass.png");
 }
 
 
