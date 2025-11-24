@@ -1,103 +1,120 @@
-/* Change Icon */
-/* Nitro Home */
-
 /* Friends */
-[href="/channels/@me"] .avatar__20a53 svg {
-    display: none !important;
-}
-[href="/channels/@me"] .avatar__20a53::before {
-    content: "";
-    display: block;
-    width: 20px;
-    height: 20px;
-    background: url("https://i.postimg.cc/HsyfSxpy/addfriend.png")no-repeat;
-    transition: transform 0.3s ease, opacity 0.3s ease; /* Add transition */
-}
-/* Hover effect */
-[href="/channels/@me"] .avatar__20a53:hover::before {
-    transform: scale(1.2); /* Increase size on hover */
-    opacity: 0.8; /* Slightly fade on hover */
+[href="/channels/@me"] {
+    .avatar__20a53 svg {
+        display: none !important;
+    }
+    .avatar__20a53::before {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 20px;
+        background: url("https://i.postimg.cc/HsyfSxpy/addfriend.png") no-repeat;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+    .avatar__20a53:hover::before {
+        transform: scale(1.2);
+        opacity: 0.8;
+    }
 }
 
+
 /* Nitro Home */
-[href="/store"] .avatar__20a53 svg {
-    display: none !important;
+[href="/store"] {
+    .avatar__20a53 svg {
+        display: none !important;
+    }
+    .avatar__20a53::before {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 20px;
+        background: url("https://i.postimg.cc/HkGCHMSK/nitrohome.png") no-repeat;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+    .avatar__20a53:hover::before {
+        transform: scale(1.2);
+        opacity: 0.8;
+    }
 }
-[href="/store"] .avatar__20a53::before {
-    content: "";
-    display: block;
-    width: 20px;
-    height: 20px;
-    background: url("https://i.postimg.cc/HkGCHMSK/nitrohome.png")no-repeat;
-    transition: transform 0.3s ease, opacity 0.3s ease; /* Add transition */
-}
-/* Hover effect */
-[href="/store"] .avatar__20a53:hover::before {
-    transform: scale(1.2); /* Increase size on hover */
-    opacity: 0.8; /* Slightly fade on hover */
+
+
+/* Message Request */
+[href="/message-requests"] {
+    .avatar__20a53 svg {
+        display: none !important;
+    }
+    .avatar__20a53::before {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 20px;
+        background: url("https://i.postimg.cc/SKLNVTjK/messg.png") no-repeat;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+    .avatar__20a53:hover::before {
+        transform: scale(1.2);
+        opacity: 0.8;
+    }
 }
 
 /* Shop */
-[href="/shop"] .avatar__20a53 svg {
-    display: none !important;
-}
-[href="/shop"] .avatar__20a53::before {
-    content: "";
-    display: block;
-    width: 20px;
-    height: 20px;
-    background: url("https://i.postimg.cc/wMsbbfdT/Shopes.png") no-repeat;
-    transition: transform 0.3s ease, opacity 0.3s ease; /* Add transition */
-}
-/* Hover effect */
-[href="/shop"] .avatar__20a53:hover::before {
-    transform: scale(1.2); /* Increase size on hover */
-    opacity: 0.8; /* Slightly fade on hover */
+[href="/shop"] {
+    .avatar__20a53 svg {
+        display: none !important;
+    }
+    .avatar__20a53::before {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 20px;
+        background: url("https://i.postimg.cc/wMsbbfdT/Shopes.png") no-repeat;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+    .avatar__20a53:hover::before {
+        transform: scale(1.2);
+        opacity: 0.8;
+    }
 }
 
 /* Quest Home */
-[href="/quest-home"] .avatar__20a53 svg {
-    display: none !important;
-}
-[href="/quest-home"] .avatar__20a53::before {
-    content: "";
-    display: block;
-    width: 20px;
-    height: 20px;
-    background: url("https://i.postimg.cc/wMQ5CfhQ/quest-orb.webp") no-repeat;
-    transition: transform 0.3s ease, opacity 0.3s ease; /* Add transition */
-}
-/* Hover effect */
-[href="/quest-home"] .avatar__20a53:hover::before {
-    transform: scale(1.2); /* Increase size on hover */
-    opacity: 0.8; /* Slightly fade on hover */
+[href="/quest-home"] {
+    .avatar__20a53 svg {
+        display: none !important;
+    }
+    .avatar__20a53::before {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 20px;
+        background: url("https://i.postimg.cc/wMQ5CfhQ/quest-orb.webp") no-repeat;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+    .avatar__20a53:hover::before {
+        transform: scale(1.2);
+        opacity: 0.8;
+    }
 }
 
-
-
-/* change Discover and Add Server icon */
+/* Change Discover and Add Server Icon */
 [data-list-item-id="guildsnav___create-join-button"] {
-  content: url("https://cdn3.emoji.gg/emojis/423717-discord-camp.png");
+    content: url("https://cdn3.emoji.gg/emojis/423717-discord-camp.png");
 }
 
 [data-list-item-id="guildsnav___guild-discover-button"] {
-  content: url("https://cdn3.emoji.gg/emojis/985781-magnifying-glass.png");
+    content: url("https://cdn3.emoji.gg/emojis/985781-magnifying-glass.png");
 }
-
 
 /* Little Fix */
-/* turn every text white on hover */
 *:hover {
-  color:var(--text-1) !important;
+    color: var(--text-1) !important;
 }
 
-
-/* search Text */
+/* Search Text */
 .public-DraftEditorPlaceholder-inner {
-  color: var(--text-5);
+    color: var(--text-5);
 }
 
-/* quest shop */
+/* Quest Shop */
 .clickable_a3e8db {
     margin-right: 130px;
 }
