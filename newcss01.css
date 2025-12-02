@@ -15,6 +15,7 @@
 /* Remove Create Invite & Channel Buttons */
 [class^="iconVisibility_"] [aria-label="Create Invite"],
 [class^="iconVisibility_"] [aria-label="Edit Channel"],
+[class^="iconVisibility_"] [aria-label="Invite to Channel"],
 [class^="iconVisibility_"] [aria-label="Create Channel"] {
   display: none !important;
 }
