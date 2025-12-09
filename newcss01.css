@@ -153,14 +153,6 @@ display: none;
 }
 
 
-/* Pinned Page Switcher */
-[class^=searchResultsWrap_] [class^=container_]:has([class^=pageControlContainer_]){
-  position: sticky;
-  bottom: 10px;
-  z-index: 999;
-  border-radius: 10px;
-  background: var(--bg-overlay-1, var(--background-secondary));
-}
 
 
 /* Server Name Tooltip 1 LINE */
