@@ -30,6 +30,14 @@ div[aria-label="Edit Image with Apps"] {
   display: none;
 }
 
+/* Remove Invite (channel list) */
+.invitesRefresh_f37cb1 .inviteButton_f37cb1 {
+  display: none;
+}
+.inviteButton_f37cb1 {
+  display: none;
+}
+
 /* Remove Reaction Right-Click Menu */
 [id^="message-quickreact-"] {
   display: none !important;
@@ -355,3 +363,9 @@ svg[class^="ellipsis"] {
 .app-launcher-entrypoint{
     display: none !important;
 }
+
+/* Hide Check Point */
+.button__85643:nth-of-type(1) {
+    display: none;
+}
+
