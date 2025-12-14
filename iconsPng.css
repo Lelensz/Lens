@@ -95,14 +95,6 @@
     }
 }
 
-/* Change Discover and Add Server Icon */
-[data-list-item-id="guildsnav___create-join-button"] {
-    content: url("https://i.postimg.cc/zftfWSzx/ezgif-74f09f2857013c16.png");
-}
-
-[data-list-item-id="guildsnav___guild-discover-button"] {
-    content: url("https://i.postimg.cc/Gt0dJXZt/ezgif-7ed312060b4ea038.png");
-}
 
 /* Little Fix */
 *:hover {
