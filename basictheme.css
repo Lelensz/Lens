@@ -1,3 +1,4 @@
+
 /* Colourful forum bar */
 @import url('https://Lelensz.github.io/Lens/panelspotify-profilev2-rainbowthreads.css');
 
@@ -31,10 +32,10 @@ div[aria-label="Edit Image with Apps"] {
 }
 
 /* Remove Invite (channel list) */
-.invitesRefresh_f37cb1 .inviteButton_f37cb1 {
+.invitesRefresh_f37cb1 .f37cb1984c371ee5-inviteButton {
   display: none;
 }
-.inviteButton_f37cb1 {
+.f37cb1984c371ee5-inviteButton {
   display: none;
 }
 
@@ -42,7 +43,7 @@ div[aria-label="Edit Image with Apps"] {
 [id^="message-quickreact-"] {
   display: none !important;
 }
-#message>div>.wrapper_f563df {
+#message>div>.f563df886a7377be-wrapper {
   display: none;
 }
 
@@ -53,7 +54,7 @@ div[aria-label="Edit Image with Apps"] {
 }
 
 /* Remove Reply & Send Reaction Buttons Profile */
-.avatarPopover__2d0ab {
+._2d0abf0638bcaa3f-avatarPopover {
   display: none!important;
 }
 
@@ -64,8 +65,8 @@ section[class^="panels_"]>div[class^="mask_"] {
 
 
 /* Remove 3 emoji reactions */
-.hoverBarButton_f84418[aria-label^="Click to "],
-.separator_f84418 {
+.f84418acfdbdfe54-hoverBarButton[aria-label^="Click to "],
+.f84418acfdbdfe54-separator {
   display: none;
 }
 
@@ -84,28 +85,28 @@ display: none;
 }
 
 /* Remove EMOJI (MORE Buttons) */
-.wrapper_f563df {
+.f563df886a7377be-wrapper {
   display: none;
 }
 
 /* Fix Reduce Channel List Spacing */
-[class="link__2ea32"] {
+[class="_2ea32c412048f708-link"] {
   padding-block: 1.5px;
 }
 
 
 /* SNIPPETS ADDED */
 /* ROLE COLOR PROFILE By Refact0r*/
-.role_dfa8b6.pill_dfa8b6 {
+.dfa8b6b94cddb191-role.dfa8b6b94cddb191-pill {
   position: relative;
   background: none;
   border: none;
   padding-left: 28px;
 }
-.role_dfa8b6.pill_dfa8b6 > span {
+.dfa8b6b94cddb191-role.dfa8b6b94cddb191-pill > span {
   z-index: 1;
 }
-.role_dfa8b6.pill_dfa8b6 .roleRemoveButton_dfa8b6 {
+.dfa8b6b94cddb191-role.dfa8b6b94cddb191-pill .dfa8b6b94cddb191-roleRemoveButton {
   position: absolute;
   top: 0;
   left: 0;
@@ -113,10 +114,10 @@ display: none;
   bottom: 0;
   margin: 0 !important;
 }
-.role_dfa8b6.pill_dfa8b6 .roleCircle__4f569 {
+.dfa8b6b94cddb191-role.dfa8b6b94cddb191-pill ._4f569b8941af22d1-roleCircle {
     margin: 6px 8px;
 }
-.role_dfa8b6.pill_dfa8b6 .roleCircle__4f569::before {
+.dfa8b6b94cddb191-role.dfa8b6b94cddb191-pill ._4f569b8941af22d1-roleCircle::before {
   content: '';
   display: block;
   position: absolute;
@@ -135,28 +136,28 @@ display: none;
 :root {
   --list-item-transition: 0.2s ease;
 }
-.wrapper__2ea32 .link__2ea32 {
+._2ea32c412048f708-wrapper ._2ea32c412048f708-link {
   transition: margin-left var(--list-item-transition);
 }
-.unread__2ea32 {
+._2ea32c412048f708-unread {
   border-radius: 50%;
   width: 10px;
   height: 10px;
   background-color: var(--accent-3);
   transition: transform var(--list-item-transition), background var(--list-item-transition);
 }
-.wrapper__2ea32:hover .link__2ea32 {
+._2ea32c412048f708-wrapper:hover ._2ea32c412048f708-link {
   margin-left: 5px;
   opacity: 0.9;
 }
-.wrapper__2ea32:hover .unread__2ea32 {
+._2ea32c412048f708-wrapper:hover ._2ea32c412048f708-unread {
   transform: scale(1.2);
   background: url('https://files.catbox.moe/q4oi4j.png?size=80') no-repeat center / contain;
 }
 
 
 /* Active Channel Highlight */
-.modeSelected__2ea32 .name__2ea32 {     
+._2ea32c412048f708-modeSelected ._2ea32c412048f708-name {     
   color: var(--accent-2);
 }
 
@@ -171,7 +172,7 @@ display: none;
 
 /* Plain Folder Icon Size Pastel */
 .expandedFolderIconWrapper__48112::after,
-.folderPreview__48112::after {
+._48112cbe77dc5022-folderPreview::after {
   content: "";
   background-color: transparent;
   width: 24px;
@@ -182,19 +183,19 @@ display: none;
   transition: opacity 0.2s ease;
   transform: scale(1.2);
 }
-.folderPreview__48112:hover::after {
+._48112cbe77dc5022-folderPreview:hover::after {
   opacity: 0;
 }
-.folderPreview__48112 > .folderPreviewGuildIcon__48112 {
+._48112cbe77dc5022-folderPreview > ._48112cbe77dc5022-folderPreviewGuildIcon {
   opacity: 0.5;
   filter: blur(2.2px);
   transition: opacity 0.2s ease, filter 0.2s ease !important;
 }
-.folderPreview__48112:hover > .folderPreviewGuildIcon__48112 {
+._48112cbe77dc5022-folderPreview:hover > ._48112cbe77dc5022-folderPreviewGuildIcon {
   opacity: 1;
   filter: blur(0px);
 }
-.theme-dark .hiddenVisually__27f77[aria-expanded="false"] {
+.theme-dark .b18fe29d6fe8dd82-hiddenVisually[aria-expanded="false"] {
   background-color: #000000;
 }
 
@@ -229,44 +230,44 @@ display: none;
 
 
 /* Better Compact Context Menu */
-.menu_c1e9c4:has(.scroller_c1e9c4) {
+.c1e9c47c23f12ca3-menu:has(.c1e9c47c23f12ca3-scroller) {
   min-width: 0;
   width: 171px !important;
-  &::after,.scroller_c1e9c4 {
+  &::after,.c1e9c47c23f12ca3-scroller {
       /* border margin */
       margin: -4px;
   }
-  &::after,.separator_c1e9c4 {
+  &::after,.c1e9c47c23f12ca3-separator {
       /* separator margin */
       margin: 1px 8px !important;
   }
-  &::after,.wrapper_f563df {
+  &::after,.f563df886a7377be-wrapper {
       /* reactions margin */
       padding: 0px !important;
       margin: 1px;
   }
-  &::after,.item_c1e9c4 {
+  &::after,.c1e9c47c23f12ca3-item {
       /* min-height is 32px as default, change value for desired look */
       min-height: 0;
       /* padding is 4px 8px as default, change value for desired look */
       padding: 4px 8px;
   }
-  &::after,.icon_f563df {
+  &::after,.f563df886a7377be-icon {
       /* reactions size */
       width: 18px;
   }
-  &::after,.button_f563df {
+  &::after,.f563df886a7377be-button {
       /* reactions border size */
       width: 36px;
       height: 36px;
       border-radius: 4px;
   }
-  &::after,.icon_c1e9c4 {
+  &::after,.c1e9c47c23f12ca3-icon {
       /* icons size */
       width: 18px;
       height: 18px;
   }
-  &::after,.iconContainer_c1e9c4 {
+  &::after,.c1e9c47c23f12ca3-iconContainer {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -285,22 +286,22 @@ svg[class^="ellipsis"] {
 
 
 /* fix profile bottom */
-.visual-refresh .focusLock__49fc1 .root__9c3be .outer_c0bea0 .inner_c0bea0 {
+.visual-refresh ._49fc18ba07c5025f-focusLock ._9c3bea41fd465666-root .c0bea05627c5dc35-outer .c0bea05627c5dc35-inner {
   padding: 48px 36px 48px 48px;
 }
-.visual-refresh .focusLock__49fc1 .root__9c3be .outer_c0bea0 .inner_c0bea0 .profile__9c3be {
+.visual-refresh ._49fc18ba07c5025f-focusLock ._9c3bea41fd465666-root .c0bea05627c5dc35-outer .c0bea05627c5dc35-inner ._9c3bea41fd465666-profile {
   border-radius: var(--radius-lg) var(--radius-lg) var(--radius-lg) var(--radius-lg);
 }
 
 /* move profile button by obsidian */
-.user-profile-modal-v2 .profile__9c3be {
+.user-profile-modal-v2 ._9c3bea41fd465666-profile {
   anchor-name: --profile-anchor;
   --tooltip-bg: color-mix(in oklab, var(--neutral-79) 100%, var(--custom-theme-base-color, #000) var(--custom-theme-base-color-amount, 0%));
   --tooltip-border: color-mix(in oklab,hsl(var(--opacity-12-hsl)/0.12156862745098039) 100%,hsl(var(--custom-theme-base-color-hsl,0 0% 0%)/0.12156862745098039) var(--custom-theme-border-color-amount,var(--custom-theme-base-color-amount,0%)));
     /* Edit fill (for bg) and color (for border) to be the same as above. %23 is # */
   --arrow-svg: url("data:image/svg+xml,%3Csvg fill='%23242429' color='%23323237' width='16' height='10' viewBox='0 0 16 10' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath  d='M10.3426 7.0715C9.14163 8.57272 6.85837 8.57272 5.65739 7.0715L0 -0.000244141L16 -0.000244141L10.3426 7.0715Z'%3E%3C/path%3E%3Cpath stroke='currentColor' d='M9.93457 6.84546C8.93433 8.06766 7.06567 8.06766 6.06543 6.84546L0.0546875 -0.500244L15.9453 -0.500244L9.93457 6.84546Z'%3E%3C/path%3E%3C/svg%3E");
   
-  .profileButtons__9c3be {
+  ._9c3bea41fd465666-profileButtons {
     position: fixed;
     top: calc(anchor(--profile-anchor start) + 12px);
     right: calc(anchor(--profile-anchor end) + 12px);
@@ -317,15 +318,15 @@ svg[class^="ellipsis"] {
       min-width: 32px !important;
       color: var(--button-secondary-text) !important;
 
-      >.buttonChildrenWrapper_a22cb0 {
+      >.a22cb0c66246f5d3-buttonChildrenWrapper {
         overflow: visible;
         padding: 0 !important;
-        >.buttonChildren_a22cb0 {
+        >.a22cb0c66246f5d3-buttonChildren {
           overflow: visible;
           justify-content: center;
         }
       }
-      .lineClamp1__4bd52 {
+      ._4bd5201c86a2042b-lineClamp1 {
         align-items: center;
         position: absolute;
         top: -52px;
@@ -352,7 +353,7 @@ svg[class^="ellipsis"] {
           bottom: -13px;
         }
       }
-      &:hover .lineClamp1__4bd52 {
+      &:hover ._4bd5201c86a2042b-lineClamp1 {
         opacity: 1;
         transform: scale(1);
       }
@@ -363,4 +364,3 @@ svg[class^="ellipsis"] {
 .app-launcher-entrypoint{
     display: none !important;
 }
-
