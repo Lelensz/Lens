@@ -12,12 +12,17 @@
   display: none;
 }
 
-/* Remove Create Invite & Channel Buttons */
-[class^="iconVisibility_"] [aria-label="Create Invite"],
-[class^="iconVisibility_"] [aria-label="Edit Channel"],
-[class^="iconVisibility_"] [aria-label="Invite to Channel"],
-[class^="iconVisibility_"] [aria-label="Create Channel"] {
-  display: none !important;
+/* Remove Invite (channel list) */
+.f37cb1984c371ee5-inviteButton {
+  display: none;
+}
+
+/* Hide Edit Channel / invite Channel */
+._29444ba32c7fbeab-addButtonIcon {
+  display: none;
+}
+.c69b6db0641110f6-actionIcon {
+  display: none;
 }
 
 /* Remove App Edit Image Button */
