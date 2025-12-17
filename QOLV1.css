@@ -30,8 +30,8 @@ div[aria-label="Edit Image with Apps"] {
   display: none;
 }
 
-/* Remove Active Now Activities */
-[class^=nowPlayingColumn_] {
+/* Remove App Edit Image Button */
+div[aria-label="Edit Image with Apps"] {
   display: none;
 }
 
