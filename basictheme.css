@@ -27,7 +27,7 @@ div[aria-label="Edit Image with Apps"] {
 }
 
 /* Remove Active Now Activities */
-[class^=nowPlayingColumn_] {
+[class^=_133bf5eea8e33a34-nowPlayingColumn] {
   display: none;
 }
 
