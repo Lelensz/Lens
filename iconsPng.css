@@ -1,9 +1,10 @@
+
 /* Friends */
 [href="/channels/@me"] {
-    .avatar__20a53 svg {
+    ._20a53846fe2e8513-avatar svg {
         display: none !important;
     }
-    .avatar__20a53::before {
+    ._20a53846fe2e8513-avatar::before {
         content: "";
         display: block;
         width: 20px;
@@ -11,7 +12,7 @@
         background: url("https://i.postimg.cc/HsyfSxpy/addfriend.png") no-repeat;
         transition: transform 0.3s ease, opacity 0.3s ease;
     }
-    .avatar__20a53:hover::before {
+    ._20a53846fe2e8513-avatar:hover::before {
         transform: scale(1.2);
         opacity: 0.8;
     }
@@ -20,10 +21,10 @@
 
 /* Nitro Home */
 [href="/store"] {
-    .avatar__20a53 svg {
+    ._20a53846fe2e8513-avatar svg {
         display: none !important;
     }
-    .avatar__20a53::before {
+    ._20a53846fe2e8513-avatar::before {
         content: "";
         display: block;
         width: 20px;
@@ -31,7 +32,7 @@
         background: url("https://i.postimg.cc/HkGCHMSK/nitrohome.png") no-repeat;
         transition: transform 0.3s ease, opacity 0.3s ease;
     }
-    .avatar__20a53:hover::before {
+    ._20a53846fe2e8513-avatar:hover::before {
         transform: scale(1.2);
         opacity: 0.8;
     }
@@ -40,10 +41,10 @@
 
 /* Message Request */
 [href="/message-requests"] {
-    .avatar__20a53 svg {
+    ._20a53846fe2e8513-avatar svg {
         display: none !important;
     }
-    .avatar__20a53::before {
+    ._20a53846fe2e8513-avatar::before {
         content: "";
         display: block;
         width: 20px;
@@ -51,7 +52,7 @@
         background: url("https://i.postimg.cc/SKLNVTjK/messg.png") no-repeat;
         transition: transform 0.3s ease, opacity 0.3s ease;
     }
-    .avatar__20a53:hover::before {
+    ._20a53846fe2e8513-avatar:hover::before {
         transform: scale(1.2);
         opacity: 0.8;
     }
@@ -59,10 +60,10 @@
 
 /* Shop */
 [href="/shop"] {
-    .avatar__20a53 svg {
+    ._20a53846fe2e8513-avatar svg {
         display: none !important;
     }
-    .avatar__20a53::before {
+    ._20a53846fe2e8513-avatar::before {
         content: "";
         display: block;
         width: 20px;
@@ -70,7 +71,7 @@
         background: url("https://i.postimg.cc/wMsbbfdT/Shopes.png") no-repeat;
         transition: transform 0.3s ease, opacity 0.3s ease;
     }
-    .avatar__20a53:hover::before {
+    ._20a53846fe2e8513-avatar:hover::before {
         transform: scale(1.2);
         opacity: 0.8;
     }
@@ -78,10 +79,10 @@
 
 /* Quest Home */
 [href="/quest-home"] {
-    .avatar__20a53 svg {
+    ._20a53846fe2e8513-avatar svg {
         display: none !important;
     }
-    .avatar__20a53::before {
+    ._20a53846fe2e8513-avatar::before {
         content: "";
         display: block;
         width: 20px;
@@ -89,7 +90,7 @@
         background: url("https://i.postimg.cc/wMQ5CfhQ/quest-orb.webp") no-repeat;
         transition: transform 0.3s ease, opacity 0.3s ease;
     }
-    .avatar__20a53:hover::before {
+    ._20a53846fe2e8513-avatar:hover::before {
         transform: scale(1.2);
         opacity: 0.8;
     }
@@ -107,6 +108,6 @@
 }
 
 /* Quest Shop */
-.clickable_a3e8db {
+.a3e8dbaff932c162-clickable {
     margin-right: 130px;
 }
