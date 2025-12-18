@@ -45,26 +45,28 @@
   display: none;
 }
 
-/* Remove Active Now Activities */
-[class^=_133bf5eea8e33a34-nowPlayingColumn] {
-  display: none;
+/* hide nercessary button Chat bar*/
+div[aria-label="Send a gift"],
+div[aria-label="Open GIF picker"],
+div[aria-label="Open sticker picker"],
+button[aria-label="Open Translate Modal"],
+button[aria-label="Typing Hidden (Global)"] {
+display: none;
 }
 
-/* Hide Edit Channel / invite Channel */
-._29444ba32c7fbeab-addButtonIcon {
+/* Snippets Remove / Hide unnecessary things */
+._29444ba32c7fbeab-addButtonIcon,
+ .c69b6db0641110f6-actionIcon,
+ invitesRefresh_f37cb1 .f37cb1984c371ee5-inviteButton,
+ .f37cb1984c371ee5-inviteButton,
+ ._2d0abf0638bcaa3f-avatarPopover,
+ .app-launcher-entrypoint,
+ .f563df886a7377be-wrapper,
+ ._85643a485899904b-button, _9293f6b2fc12398a-iconWrapper,
+ ._133bf5eea8e33a34-nowPlayingColumn {
   display: none;
-}
-.c69b6db0641110f6-actionIcon {
-  display: none;
-}
+ }
 
-/* Remove Invite top Server name */
-.invitesRefresh_f37cb1 .f37cb1984c371ee5-inviteButton {
-  display: none;
-}
-.f37cb1984c371ee5-inviteButton {
-  display: none;
-}
 
 /* Remove Reaction Right-Click Menu */
 [id^="message-quickreact-"] {
@@ -80,39 +82,8 @@
   display: none;
 }
 
-/* Remove Reply & Send Reaction Buttons Profile */
-._2d0abf0638bcaa3f-avatarPopover {
-  display: none!important;
-}
-
 /* Remove Quests on UserPanel */
 section[class^="panels_"]>div[class^="mask_"] {
-  display: none;
-}
-
-
-/* Remove 3 emoji reactions */
-.f84418acfdbdfe54-hoverBarButton[aria-label^="Click to "],
-.f84418acfdbdfe54-separator {
-  display: none;
-}
-
-/* hide nercessary button */
-div[aria-label="Send a gift"],
-div[aria-label="Open GIF picker"],
-div[aria-label="Open sticker picker"],
-button[aria-label="Open Translate Modal"],
-button[aria-label="Typing Hidden (Global)"] {
-display: none;
-}
-
-/* App launcher */
-.app-launcher-entrypoint{
-    display: none !important;
-}
-
-/* Remove EMOJI (MORE Buttons) */
-.f563df886a7377be-wrapper {
   display: none;
 }
 
@@ -121,6 +92,39 @@ display: none;
   padding-block: 1.5px;
 }
 
+/* fix profile bottom */
+.visual-refresh ._49fc18ba07c5025f-focusLock ._9c3bea41fd465666-root .c0bea05627c5dc35-outer .c0bea05627c5dc35-inner {
+  padding: 48px 36px 48px 48px;
+}
+.visual-refresh ._49fc18ba07c5025f-focusLock ._9c3bea41fd465666-root .c0bea05627c5dc35-outer .c0bea05627c5dc35-inner ._9c3bea41fd465666-profile {
+  border-radius: var(--radius-lg) var(--radius-lg) var(--radius-lg) var(--radius-lg);
+}
+
+/* revert the input/output dropdowns user panel */
+[class*="buttons"] [role="switch"] {
+  border-radius: var(--radius-sm);
+  ~ button:not([aria-label="User Settings"]) {
+    display: none;
+  }
+}
+
+/* Hide typing dots in chat bar */
+[class*="ellipsis"] {
+  display: none !important;
+  & + span {
+    margin-left: 1px !important;
+  }
+}
+
+/* Server Tooltip */
+[class*=tooltip] { 
+    max-width: unset !important; 
+}
+
+/* Active Channel Highlight */
+._2ea32c412048f708-modeSelected ._2ea32c412048f708-name {     
+  color: var(--accent-2);
+}
 
 /* SNIPPETS ADDED */
 /* ROLE COLOR PROFILE By Refact0r*/
@@ -183,11 +187,6 @@ display: none;
 }
 
 
-/* Active Channel Highlight */
-._2ea32c412048f708-modeSelected ._2ea32c412048f708-name {     
-  color: var(--accent-2);
-}
-
 /* Plain Folder Icon Size Pastel */
 .expandedFolderIconWrapper__48112::after,
 ._48112cbe77dc5022-folderPreview::after {
@@ -216,7 +215,6 @@ display: none;
 .theme-dark .b18fe29d6fe8dd82-hiddenVisually[aria-expanded="false"] {
   background-color: #000000;
 }
-
 
 
 /* Better Compact Context Menu */
@@ -264,14 +262,6 @@ display: none;
   }
 }
 
-
-/* fix profile bottom */
-.visual-refresh ._49fc18ba07c5025f-focusLock ._9c3bea41fd465666-root .c0bea05627c5dc35-outer .c0bea05627c5dc35-inner {
-  padding: 48px 36px 48px 48px;
-}
-.visual-refresh ._49fc18ba07c5025f-focusLock ._9c3bea41fd465666-root .c0bea05627c5dc35-outer .c0bea05627c5dc35-inner ._9c3bea41fd465666-profile {
-  border-radius: var(--radius-lg) var(--radius-lg) var(--radius-lg) var(--radius-lg);
-}
 
 /* move profile button by obsidian */
 .user-profile-modal-v2 ._9c3bea41fd465666-profile {
@@ -341,32 +331,3 @@ display: none;
   }
 }
 
-.app-launcher-entrypoint{
-    display: none !important;
-}
-
-/* Hide Check Point */
-._85643a485899904b-button:nth-of-type(1) {
-    display: none;
-}
-
-/* revert the input/output dropdowns */
-[class*="buttons"] [role="switch"] {
-  border-radius: var(--radius-sm);
-  ~ button:not([aria-label="User Settings"]) {
-    display: none;
-  }
-}
-
-
-/* Hide typing dots in chat bar */
-[class*="ellipsis"] {
-  display: none !important;
-  & + span {
-    margin-left: 1px !important;
-  }
-}
-
-/* Server Tooltip */
-[class*=tooltip] { 
-    max-width: unset !important; }
