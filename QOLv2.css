@@ -331,3 +331,116 @@ section[class^="panels_"]>div[class^="mask_"] {
   }
 }
 
+
+/* Add PNG icons */
+/* Friends */
+[href="/channels/@me"] {
+    ._20a53846fe2e8513-avatar svg {
+        display: none !important;
+    }
+    ._20a53846fe2e8513-avatar::before {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 20px;
+        background: url("https://i.postimg.cc/HsyfSxpy/addfriend.png") no-repeat;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+    ._20a53846fe2e8513-avatar:hover::before {
+        transform: scale(1.2);
+        opacity: 0.8;
+    }
+}
+
+/* Nitro Home */
+[href="/store"] {
+    ._20a53846fe2e8513-avatar svg {
+        display: none !important;
+    }
+    ._20a53846fe2e8513-avatar::before {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 20px;
+        background: url("https://i.postimg.cc/HkGCHMSK/nitrohome.png") no-repeat;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+    ._20a53846fe2e8513-avatar:hover::before {
+        transform: scale(1.2);
+        opacity: 0.8;
+    }
+}
+
+/* Message Request */
+[href="/message-requests"] {
+    ._20a53846fe2e8513-avatar svg {
+        display: none !important;
+    }
+    ._20a53846fe2e8513-avatar::before {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 20px;
+        background: url("https://i.postimg.cc/SKLNVTjK/messg.png") no-repeat;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+    ._20a53846fe2e8513-avatar:hover::before {
+        transform: scale(1.2);
+        opacity: 0.8;
+    }
+}
+
+/* Shop */
+[href="/shop"] {
+    ._20a53846fe2e8513-avatar svg {
+        display: none !important;
+    }
+    ._20a53846fe2e8513-avatar::before {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 20px;
+        background: url("https://i.postimg.cc/wMsbbfdT/Shopes.png") no-repeat;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+    ._20a53846fe2e8513-avatar:hover::before {
+        transform: scale(1.2);
+        opacity: 0.8;
+    }
+}
+
+/* Quest Home */
+[href="/quest-home"] {
+    ._20a53846fe2e8513-avatar svg {
+        display: none !important;
+    }
+    ._20a53846fe2e8513-avatar::before {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 20px;
+        background: url("https://i.postimg.cc/wMQ5CfhQ/quest-orb.webp") no-repeat;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+    ._20a53846fe2e8513-avatar:hover::before {
+        transform: scale(1.2);
+        opacity: 0.8;
+    }
+}
+
+
+/* Little Fix */
+*:hover {
+    color: var(--text-1) !important;
+}
+
+/* Search Text */
+.public-DraftEditorPlaceholder-inner {
+    color: var(--text-5);
+}
+
+/* Quest Shop */
+.a3e8dbaff932c162-clickable {
+    margin-right: 130px;
+}
+
