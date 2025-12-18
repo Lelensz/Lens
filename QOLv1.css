@@ -25,7 +25,7 @@
   display: none;
 }
 
-/* Remove Invite (channel list) */
+/* Remove Invite top Server name */
 .invitesRefresh_f37cb1 .f37cb1984c371ee5-inviteButton {
   display: none;
 }
@@ -155,15 +155,6 @@ display: none;
   color: var(--accent-2);
 }
 
-
-
-
-/* Server Name Tooltip 1 LINE */
-[class^=tooltip] {
-  max-width: unset !important;
-}
-
-
 /* Plain Folder Icon Size Pastel */
 .expandedFolderIconWrapper__48112::after,
 ._48112cbe77dc5022-folderPreview::after {
@@ -237,16 +228,6 @@ display: none;
       display: flex;
       justify-content: center;
       align-items: center;
-  }
-}
-
-
-/* Hide typing dots in chat bar */
-svg[class^="ellipsis"] {
-  display: none !important;
-
-  & + span {
-    margin-left: 5px !important;
   }
 }
 
@@ -343,3 +324,16 @@ svg[class^="ellipsis"] {
     display: none;
   }
 }
+
+
+/* Hide typing dots in chat bar */
+[class*="ellipsis"] {
+  display: none !important;
+  & + span {
+    margin-left: 1px !important;
+  }
+}
+
+/* Server Tooltip */
+[class*=tooltip] { 
+    max-width: unset !important; }
