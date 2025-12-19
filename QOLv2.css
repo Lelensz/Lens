@@ -35,6 +35,30 @@
 }
 
 
+/* Link Hover with Unread Badge Effect by Refactor */
+:root {
+  --list-item-transition: 0.3s ease;
+}
+._2ea32c412048f708-wrapper ._2ea32c412048f708-link {
+  transition: margin-left var(--list-item-transition);
+}
+._2ea32c412048f708-unread {
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  background-color: var(--accent-3);
+  transition: transform var(--list-item-transition), background var(--list-item-transition);
+}
+._2ea32c412048f708-wrapper:hover ._2ea32c412048f708-link {
+  margin-left: 5px;
+  opacity: 0.9;
+}
+._2ea32c412048f708-wrapper:hover ._2ea32c412048f708-unread {
+  transform: scale(1.3);
+  background: url('https://files.catbox.moe/q4oi4j.png?size=80') no-repeat center / contain;
+}
+
+
 /* UI CLEANUP – REMOVE UNWANTED STUFF */
 /* Remove certain message actions for a cleaner UI */
 [aria-label*="Create Thread"], /* Hides thread creation button */
@@ -162,29 +186,6 @@ section[class^="panels_"]>div[class^="mask_"] {
   opacity: 0.25;
 }
 
-
-/* Link Hover with Unread Badge Effect by Refactor */
-:root {
-  --list-item-transition: 0.2s ease;
-}
-._2ea32c412048f708-wrapper ._2ea32c412048f708-link {
-  transition: margin-left var(--list-item-transition);
-}
-._2ea32c412048f708-unread {
-  border-radius: 50%;
-  width: 10px;
-  height: 10px;
-  background-color: var(--accent-3);
-  transition: transform var(--list-item-transition), background var(--list-item-transition);
-}
-._2ea32c412048f708-wrapper:hover ._2ea32c412048f708-link {
-  margin-left: 5px;
-  opacity: 0.9;
-}
-._2ea32c412048f708-wrapper:hover ._2ea32c412048f708-unread {
-  transform: scale(1.2);
-  background: url('https://files.catbox.moe/q4oi4j.png?size=80') no-repeat center / contain;
-}
 
 
 /* Plain Folder Icon Size Pastel */
