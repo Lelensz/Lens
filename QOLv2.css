@@ -437,3 +437,8 @@ section[class^="panels_"]>div[class^="mask_"] {
     margin-right: 130px;
 }
 
+/* Remove 3 emoji reactions */
+.f84418acfdbdfe54-hoverBarButton[aria-label^="Click to"],
+.f84418acfdbdfe54-separator {
+  display: none;
+}
