@@ -69,14 +69,6 @@
   display: none;
 }
 
-/* hide nercessary button Chat bar*/
-div[aria-label="Send a gift"],
-div[aria-label="Open GIF picker"],
-div[aria-label="Open sticker picker"],
-button[aria-label="Open Translate Modal"],
-button[aria-label="Typing Hidden (Global)"] {
-display: none;
-}
 
 /* Snippets Remove / Hide unnecessary things */
 ._29444ba32c7fbeab-addButtonIcon,
