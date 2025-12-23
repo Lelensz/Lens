@@ -427,11 +427,6 @@ section[class^="panels_"]>div[class^="mask_"] {
     color: var(--text-1) !important;
 }
 
-/* Search Text */
-.public-DraftEditorPlaceholder-inner {
-    color: var(--text-5);
-}
-
 /* Quest Shop */
 .a3e8dbaff932c162-clickable {
     margin-right: 130px;
