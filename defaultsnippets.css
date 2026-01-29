@@ -1,3 +1,25 @@
+/* UI CLEANUP – REMOVE UNWANTED STUFF */
+/* Remove certain message actions for a cleaner UI */
+[aria-label*="Create Thread"], /* Hides thread creation button */
+[aria-label*="Mark Unread"], /* Hides "Mark as Unread" button */
+[aria-label*="Copy Link"], /* Hides the option to copy message link */
+[aria-label*="Pin Message"], /* Hides the pin message button */
+[aria-label*="Copy Message ID"] { /* Hides message ID copy option */
+  display: none;
+}
+
+/* Snippets Remove / Hide unnecessary things */
+.addButtonIcon__29444,
+ .actionIcon_c69b6d,
+ invitesRefresh_f37cb1 .inviteButton_f37cb1,
+ .inviteButton_f37cb1,
+ .avatarPopover__2d0ab,
+ .app-launcher-entrypoint,
+ .wrapper_f563df,
+ .nowPlayingColumn__133bf {
+  display: none;
+ }
+
 
 /* Image Spoiler */
 :root {
@@ -46,8 +68,8 @@
   opacity: 0.9;
 }
 .wrapper__2ea32:hover .unread__2ea32 {
-  transform: scale(1.3);
-  background: url('https://files.catbox.moe/q4oi4j.png?size=80') no-repeat center / contain;
+  transform: scale(2);
+  background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwxSQUL-LLW7wgXkM7JrjXXeJRKjDZb0vhNw&s') no-repeat center / contain;
 }
 
 
