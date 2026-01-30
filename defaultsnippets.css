@@ -4,7 +4,8 @@
 [aria-label*="Mark Unread"], /* Hides "Mark as Unread" button */
 [aria-label*="Copy Link"], /* Hides the option to copy message link */
 [aria-label*="Pin Message"], /* Hides the pin message button */
-[aria-label*="Copy Message ID"] { /* Hides message ID copy option */
+[aria-label*="Copy Message ID"],
+[aria-label*="Open Translate Modal"] { /* Hides message ID copy option */
   display: none;
 }
 
