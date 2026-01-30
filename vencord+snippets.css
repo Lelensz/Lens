@@ -1,0 +1,393 @@
+/* UI CLEANUP – REMOVE UNWANTED STUFF */
+/* Remove certain message actions for a cleaner UI */
+[aria-label*="Create Thread"], /* Hides thread creation button */
+[aria-label*="Mark Unread"], /* Hides "Mark as Unread" button */
+[aria-label*="Copy Link"], /* Hides the option to copy message link */
+[aria-label*="Pin Message"], /* Hides the pin message button */
+[aria-label*="Copy Message ID"],
+[aria-label*="Open Translate Modal"] { /* Hides message ID copy option */
+  display: none;
+}
+
+/* Snippets Remove / Hide unnecessary things */
+.addButtonIcon__29444,
+ .actionIcon_c69b6d,
+ invitesRefresh_f37cb1 .inviteButton_f37cb1,
+ .inviteButton_f37cb1,
+ .avatarPopover__2d0ab,
+ .app-launcher-entrypoint,
+ .wrapper_f563df,
+ .nowPlayingColumn__133bf {
+  display: none;
+ }
+
+
+/* Image Spoiler */
+:root {
+    --spoiler-blur-hover: 8px;
+}
+[class*="attachmentContainer_"][class*="spoilerContent_"] {
+    background-color: unset;
+    &[class*="hiddenSpoiler_"] {
+        > [class*="spoilerWarning_"] {
+            transition: opacity 50ms ease;
+        }
+        [class*="imageContent_"] {
+            filter: none !important;
+            [class*="imageWrapper_"] > [class*="clickableWrapper_"] {
+                filter: blur(var(--custom-message-attachment-spoiler-blur-radius));
+                transition: filter 80ms ease-out;
+            }
+        }
+        &:hover {
+            > [class*="spoilerWarning_"] {
+                opacity: 0.2;
+            }
+            [class*="imageWrapper_"] > [class*="clickableWrapper_"] {
+                filter: blur(var(--spoiler-blur-hover));
+            }
+        }
+    }
+}
+
+
+/* Remove Reaction Right-Click Menu */
+[id^="message-quickreact-"] {
+  display: none !important;
+}
+#message>div>.wrapper_f563df {
+  display: none;
+}
+
+/* Remoove Activity Member List*/
+[class*='membersGroup']:has([role=button]), /* Hides member group with buttons */
+[class*='member'] [class*='container']:has([class*='badges']) { /* Hides member containers with badges */
+  display: none;
+}
+
+/* Remove Quests on UserPanel */
+section[class^="panels_"]>div[class^="mask_"] {
+  display: none;
+}
+
+/* Fix Reduce Channel List Spacing */
+.link__2ea32 {
+  padding-block: 1.5px;
+}
+
+/* Compact Forum */
+/* pashtet_iv */
+.container__5b40b .link__2ea32 {
+padding-top: 0px !important;
+padding-bottom: 0px !important;
+}
+.spineBorder__5b40b {
+    display: none;
+}
+
+
+/* fix profile bottom */
+.visual-refresh .focusLock__49fc1 .root__9c3be .outer_c0bea0 .inner_c0bea0 {
+  padding: 48px 36px 48px 48px;
+}
+.visual-refresh .focusLock__49fc1 .root__9c3be .outer_c0bea0 .inner_c0bea0 .profile__9c3be {
+  border-radius: var(--radius-lg) var(--radius-lg) var(--radius-lg) var(--radius-lg);
+}
+
+/* revert the input/output dropdowns user panel */
+[class*="buttons"] [role="switch"] {
+  border-radius: var(--radius-sm);
+  ~ button:not([aria-label="User Settings"]) {
+    display: none;
+  }
+}
+
+/* Hide typing dots in chat bar */
+[class*="ellipsis"] {
+  display: none !important;
+  & + span {
+    margin-left: 1px !important;
+  }
+}
+
+/* Server Tooltip */
+[class*=tooltip] { 
+    max-width: unset !important; 
+}
+
+
+/* Plain Folder Icon Size Pastel */
+.expandedFolderIconWrapper__48112::after,
+.folderPreview__48112::after {
+  content: "";
+  background-color: transparent;
+  width: 24px;
+  height: 24px;
+  top: 60px;
+  right: 12px;
+  position: absolute;
+  transition: opacity 0.2s ease;
+  transform: scale(1.2);
+}
+.folderPreview__48112:hover::after {
+  opacity: 0;
+}
+.folderPreview__48112 > .folderPreviewGuildIcon__48112 {
+  opacity: 0.5;
+  filter: blur(2.2px);
+  transition: opacity 0.2s ease, filter 0.2s ease !important;
+}
+.folderPreview__48112:hover > .folderPreviewGuildIcon__48112 {
+  opacity: 1;
+  filter: blur(0px);
+}
+.theme-dark .hiddenVisually_b18fe2[aria-expanded="false"] {
+  background-color: #000000;
+}
+
+
+/* Better Compact Context Menu */
+/* compact context menu */
+div[aria-label="Message Actions"]>div[dir="ltr"] {
+
+    div>div>div>div[class$="-layer"]>div[class$="-submenuPaddingContainer"] {
+        transform: translate(0, 0px) !important;
+    }
+}
+
+div[aria-label$="ctions"]>div[dir="ltr"] {
+    margin: -4px;
+    height: fit-content;
+
+    div[class*="wrapper_"] {
+        padding: 2px;
+    }
+
+    div[role="separator"] {
+        margin: 1px 8px;
+    }
+
+
+    div>div>div>div[class$="-layer"]>div[class$="-submenuPaddingContainer"] {
+        transform: translate(0, -5px);
+        padding: 0 4px;
+
+        div[class*="submenu_"] {
+
+            div[class*="scroller_"] {
+                padding: 4px;
+            }
+        }
+    }
+}
+
+div[class$="appAsidePanelWrapper"]>div>div>div>div>div[class*="animatorRight_"]>div[class$="-popout"] {
+
+    margin: 0 -4px 0 0;
+    padding: 0px 8px;
+
+    div[class$="-title"] {
+        padding: 6px 0 4px 0;
+
+    }
+
+    div[class$="-more"] {
+        margin: 0 4px;
+        padding: 4px 0 6px 0;
+    }
+}
+
+div[aria-label="Stop Streaming"]>div[dir="ltr"],
+div[aria-label="Camera"]>div[dir="ltr"] {
+
+    padding: 4px;
+    height: fit-content;
+
+    div[role="separator"] {
+        margin: 1px 8px;
+    }
+
+    div[class$="-clickTrapContainer"]>div[class$="-layer"]>div[class*="submenuPaddingContainer"] {
+
+        transform: translate(0, -5px);
+
+        padding: 0 4px;
+
+        div[aria-activedescendant^="manage-streams"]>div[dir="ltr"] {
+            padding: 4px;
+        }
+    }
+
+    div[aria-activedescendant^="video-device-context"] {
+        margin: 0 0 0 4px;
+
+        div[dir="ltr"] {
+            padding: 4px;
+            height: fit-content;
+        }
+    }
+
+    div[id="manage-streams-change-windows"]>div>div>div>div>div[role="menu"] {
+
+        transform: translate(0, -5px);
+
+        div[dir="ltr"] {
+
+            padding: 4px;
+            height: fit-content;
+        }
+    }
+}
+
+div[aria-activedescendant^="textarea-context-suggestions"]>div>div>div>div[class$="-layer"] {
+
+    margin: 0 -4px 0 0;
+
+    div>div[role="menu"] {
+
+        transform: translate(0, -5px);
+
+        div[dir="ltr"] {
+
+            padding: 4px;
+            height: fit-content;
+        }
+    }
+}
+
+
+/* move profile button by obsidian */
+.user-profile-modal-v2 .profile__9c3be {
+  anchor-name: --profile-anchor;
+  --tooltip-bg: color-mix(in oklab, var(--neutral-79) 100%, var(--custom-theme-base-color, #000) var(--custom-theme-base-color-amount, 0%));
+  --tooltip-border: color-mix(in oklab,hsl(var(--opacity-12-hsl)/0.12156862745098039) 100%,hsl(var(--custom-theme-base-color-hsl,0 0% 0%)/0.12156862745098039) var(--custom-theme-border-color-amount,var(--custom-theme-base-color-amount,0%)));
+    /* Edit fill (for bg) and color (for border) to be the same as above. %23 is # */
+  --arrow-svg: url("data:image/svg+xml,%3Csvg fill='%23242429' color='%23323237' width='16' height='10' viewBox='0 0 16 10' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath  d='M10.3426 7.0715C9.14163 8.57272 6.85837 8.57272 5.65739 7.0715L0 -0.000244141L16 -0.000244141L10.3426 7.0715Z'%3E%3C/path%3E%3Cpath stroke='currentColor' d='M9.93457 6.84546C8.93433 8.06766 7.06567 8.06766 6.06543 6.84546L0.0546875 -0.500244L15.9453 -0.500244L9.93457 6.84546Z'%3E%3C/path%3E%3C/svg%3E");
+  
+  .profileButtons__9c3be {
+    position: fixed;
+    top: calc(anchor(--profile-anchor start) + 12px);
+    right: calc(anchor(--profile-anchor end) + 12px);
+
+    button {
+      background: var(--redesign-button-overlay-alpha-background) !important;
+      border: 1px solid var(--opacity-white-8) !important;
+      border-radius: 50%;
+      &:hover, &:active {
+        background: var(--redesign-button-overlay-alpha-pressed-background) !important;
+      }
+    }
+    >button {
+      min-width: 32px !important;
+      color: var(--button-secondary-text) !important;
+
+      >.buttonChildrenWrapper_a22cb0 {
+        overflow: visible;
+        padding: 0 !important;
+        >.buttonChildren_a22cb0 {
+          overflow: visible;
+          justify-content: center;
+        }
+      }
+      .lineClamp1__4bd52 {
+        align-items: center;
+        position: absolute;
+        top: -52px;
+        
+        background-color: var(--tooltip-bg);
+        border-radius: var(--radius-sm);
+        box-shadow: inset 0 0 0 1px var(--tooltip-border), var(--shadow-high);
+        color: var(--text-default);
+        padding: var(--space-8) var(--space-12);
+        pointer-events: none;
+        
+        display: flex;
+        justify-content: center;
+        overflow: visible;
+
+        will-change: opacity, transform;
+        opacity: 0;
+        transform: scale(0.95);
+        transform-origin: 50% 100%;
+        transition: opacity 0.1s ease, transform 0.1s ease;
+        &::after {
+          content: var(--arrow-svg);
+          position: absolute;
+          bottom: -13px;
+        }
+      }
+      &:hover .lineClamp1__4bd52 {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  }
+}
+
+
+/* Remove 3 emoji reactions */
+.hoverBarButton_f84418[aria-label^="Click to"],
+.separator_f84418 {
+  display: none;
+}
+
+
+/\* RAINBOW THREAD */
+.content_d125d2 > li.container__5b40b > ul[role="group"] {
+> .spineBorder__5b40b {
+    --step: calc(var(--channels-name-line-height) + 10px);
+    background: var(--thread-muted, repeating-linear-gradient(
+      #824e62 calc(var(--step) \* 0),
+      #824e62 calc(var(--step) \* 1),
+      #866251 calc(var(--step) \* 1),
+      #866251 calc(var(--step) \* 2),
+      #857a65 calc(var(--step) \* 2),
+      #857a65 calc(var(--step) \* 3),
+      #5c7a5e calc(var(--step) \* 3),
+      #5c7a5e calc(var(--step) \* 4),
+      #4d638b calc(var(--step) \* 4),
+      #4d638b calc(var(--step) \* 5),
+      #6e5c89 calc(var(--step) \* 5),
+      #6e5c89 calc(var(--step) \* 6))
+    )
+  }
+> li {
+    --interactive-hover: var(--thread-core, #f38ba8);
+    --interactive-active: var(--thread-core, #f38ba8);
+  }
+> li:nth-of-type(6n + 1) {
+    --channels-default: var(--thread-default, rgba(243, 139, 168, 0.7));
+    --text-primary: var(--thread-core, #f38ba8);
+    --interactive-muted: var(--thread-muted, #824e62);
+  }
+> li:nth-of-type(6n + 2) {
+    --channels-default: var(--thread-default, rgba(250, 179, 135, 0.7));
+    --text-primary: var(--thread-core, #fab387);
+    --interactive-muted: var(--thread-muted, #866251);
+  }
+> li:nth-of-type(6n + 3) {
+    --channels-default: var(--thread-default, rgba(249, 226, 175, 0.7));
+    --text-primary: var(--thread-core, #f9e2af);
+    --interactive-muted: var(--thread-muted, #857a65);
+  }
+> li:nth-of-type(6n + 4) {
+    --channels-default: var(--thread-default, rgba(166, 227, 161, 0.7));
+    --text-primary: var(--thread-core, #a6e3a1);
+    --interactive-muted: var(--thread-muted, #5c7a5e);
+  }
+> li:nth-of-type(6n + 5) {
+    --channels-default: var(--thread-default, rgba(137, 180, 250, 0.7));
+    --text-primary: var(--thread-core, #89b4fa);
+    --interactive-muted: var(--thread-muted, #4d638b);
+  }
+> li:nth-of-type(6n + 6) {
+    --channels-default: var(--thread-default, rgba(203, 166, 247, 0.7));
+    --text-primary: var(--thread-core, #cba6f7);
+    --interactive-muted: var(--thread-muted, #6e5c89);
+  }
+  li:only-of-type {
+    --channels-default: var(--thread-default, rgba(245, 194, 231, 0.7));
+    --text-primary: var(--thread-core, #f5c2e7);
+    --interactive-muted: var(--thread-muted, #836a81);
+  }
+}
