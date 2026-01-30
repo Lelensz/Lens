@@ -332,7 +332,7 @@ div[aria-activedescendant^="textarea-context-suggestions"]>div>div>div>div[class
 }
 
 
-/\* RAINBOW THREAD */
+/* RAINBOW THREAD */
 .content_d125d2 > li.container__5b40b > ul[role="group"] {
 > .spineBorder__5b40b {
     --step: calc(var(--channels-name-line-height) + 10px);
