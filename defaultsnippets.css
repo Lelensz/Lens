@@ -158,48 +158,112 @@ padding-bottom: 0px !important;
 
 
 /* Better Compact Context Menu */
-.menu_c1e9c4:has(.scroller_c1e9c4) {
-  min-width: 0;
-  width: 171px !important;
-  &::after,.scroller_c1e9c4 {
-      /* border margin */
-      margin: -4px;
-  }
-  &::after,.separator_c1e9c4 {
-      /* separator margin */
-      margin: 1px 8px !important;
-  }
-  &::after,.wrapper_f563df {
-      /* reactions margin */
-      padding: 0px !important;
-      margin: 1px;
-  }
-  &::after,.item_c1e9c4 {
-      /* min-height is 32px as default, change value for desired look */
-      min-height: 0;
-      /* padding is 4px 8px as default, change value for desired look */
-      padding: 4px 8px;
-  }
-  &::after,.icon_f563df {
-      /* reactions size */
-      width: 18px;
-  }
-  &::after,.button_f563df {
-      /* reactions border size */
-      width: 36px;
-      height: 36px;
-      border-radius: 4px;
-  }
-  &::after,.icon_c1e9c4 {
-      /* icons size */
-      width: 18px;
-      height: 18px;
-  }
-  &::after,.iconContainer_c1e9c4 {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-  }
+/* compact context menu */
+div[aria-label="Message Actions"]>div[dir="ltr"] {
+
+    div>div>div>div[class$="-layer"]>div[class$="-submenuPaddingContainer"] {
+        transform: translate(0, 0px) !important;
+    }
+}
+
+div[aria-label$="ctions"]>div[dir="ltr"] {
+    margin: -4px;
+    height: fit-content;
+
+    div[class*="wrapper_"] {
+        padding: 2px;
+    }
+
+    div[role="separator"] {
+        margin: 1px 8px;
+    }
+
+
+    div>div>div>div[class$="-layer"]>div[class$="-submenuPaddingContainer"] {
+        transform: translate(0, -5px);
+        padding: 0 4px;
+
+        div[class*="submenu_"] {
+
+            div[class*="scroller_"] {
+                padding: 4px;
+            }
+        }
+    }
+}
+
+div[class$="appAsidePanelWrapper"]>div>div>div>div>div[class*="animatorRight_"]>div[class$="-popout"] {
+
+    margin: 0 -4px 0 0;
+    padding: 0px 8px;
+
+    div[class$="-title"] {
+        padding: 6px 0 4px 0;
+
+    }
+
+    div[class$="-more"] {
+        margin: 0 4px;
+        padding: 4px 0 6px 0;
+    }
+}
+
+div[aria-label="Stop Streaming"]>div[dir="ltr"],
+div[aria-label="Camera"]>div[dir="ltr"] {
+
+    padding: 4px;
+    height: fit-content;
+
+    div[role="separator"] {
+        margin: 1px 8px;
+    }
+
+    div[class$="-clickTrapContainer"]>div[class$="-layer"]>div[class*="submenuPaddingContainer"] {
+
+        transform: translate(0, -5px);
+
+        padding: 0 4px;
+
+        div[aria-activedescendant^="manage-streams"]>div[dir="ltr"] {
+            padding: 4px;
+        }
+    }
+
+    div[aria-activedescendant^="video-device-context"] {
+        margin: 0 0 0 4px;
+
+        div[dir="ltr"] {
+            padding: 4px;
+            height: fit-content;
+        }
+    }
+
+    div[id="manage-streams-change-windows"]>div>div>div>div>div[role="menu"] {
+
+        transform: translate(0, -5px);
+
+        div[dir="ltr"] {
+
+            padding: 4px;
+            height: fit-content;
+        }
+    }
+}
+
+div[aria-activedescendant^="textarea-context-suggestions"]>div>div>div>div[class$="-layer"] {
+
+    margin: 0 -4px 0 0;
+
+    div>div[role="menu"] {
+
+        transform: translate(0, -5px);
+
+        div[dir="ltr"] {
+
+            padding: 4px;
+            height: fit-content;
+        }
+    }
 }
 
 
